@@ -1,4 +1,6 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.label %></p>
 <p><%= @post.body %></p>
-<%= link_to "Edit", edit_post_path(@post), class: 'btn btn-success' %>
+ <% if @user && @user.admin? %>
+  <%= link_to "Edit", edit_post_path(@post), class: 'btn btn-success' %>
+<% end %>
