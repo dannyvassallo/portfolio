@@ -1,6 +1,6 @@
 <h1>All Posts</h1>
 <% @posts.each do |post| %>
-  <p><%= link_to post.title, post %></p>
+  <!-- <p><%= link_to post.title, post %></p> -->
   <% if post.image? %>
     <%= image_tag( post.image.square.url ) %>
   <% end %>
