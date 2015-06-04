@@ -1,4 +1,7 @@
 <h1><%= @post.title %></h1>
+<% if @post.image? %>
+  <%= image_tag( @post.image.url ) %>
+<% end %>
 <p><%= @post.label %></p>
 <p><%= @post.body %></p>
  <% if @user && @user.admin? %>
