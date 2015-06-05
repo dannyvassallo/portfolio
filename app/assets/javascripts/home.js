@@ -23,7 +23,7 @@ $.fn.attachDragger = function(){
 function centerHoneycombs(el){
 	var hcHeight = $(".honeycombs").height();
 	var hcMargin = hcHeight / 3;	
-    $(el).scrollTo(hcMargin);
+    $(el).scrollTo(hcMargin - 125);
 }
 
 $(document).ready(function() {

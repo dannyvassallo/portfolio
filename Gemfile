@@ -23,6 +23,8 @@ gem 'pundit'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
+gem 'font-awesome-rails'
+
 
 group :doc do
   gem 'sdoc', require: false

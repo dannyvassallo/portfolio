@@ -1,5 +1,21 @@
+body{
+  margin: 0;
+}
 #honeycomb-wrap{
 	height: 400px;
 	width: 100%;
 	overflow: hidden;
+  background-image: url(footer_lodyas.png);
+  background-repeat: repeat
+}
+.no-select{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  user-select:none;
+  -o-user-select:none;
+}
+.mag-glass{
+  margin-top: 10px;
+  color: white;
 }
