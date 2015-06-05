@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.homeycombs
+//= require jquery.scrollTo.min
 //= require home
 //= require_tree .

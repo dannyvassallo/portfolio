@@ -1,14 +1,12 @@
-<h1>All Posts</h1>
-<div class="honeycombs">
-	<% @posts.each do |post| %>
-		<% if post.image? %>
-			<div class="comb">
-				<%= image_tag( post.image.square.url ) %>
-				<span><%= link_to post.title, post %></span>
-			</div>
+<div id="honeycomb-wrap">
+	<div class="honeycombs" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
+		<% @posts.each do |post| %>
+			<% if post.image? %>
+				<div class="comb">
+					<%= image_tag( post.image.square.url ) %>
+					<span><%= link_to post.title, post %></span>
+				</div>
+			<% end %>
 		<% end %>
-	<% end %>
+	</div>
 </div>
- <% if policy(Post.new).create? %>
-   <%= link_to "New Post", new_post_path, class: 'btn btn-success' %>
- <% end %>
