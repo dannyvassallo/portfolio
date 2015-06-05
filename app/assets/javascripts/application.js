@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.homeycombs
+//= require home
 //= require_tree .
