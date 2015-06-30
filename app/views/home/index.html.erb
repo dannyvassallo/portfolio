@@ -4,7 +4,7 @@
 			<% if post.image? %>
 				<div class="comb">
 					<%= image_tag( post.image.square.url ) %>
-					<span><%= link_to post do %><%= fa_icon "search-plus", class: "fa-3x mag-glass" %><% end %></span>
+					<span><button data-toggle="modal" data-target=<%= "#post-modal-#{post.id}" %>><%= fa_icon "search-plus", class: "fa-3x mag-glass" %></button></span>
 				</div>
 			<% end %>
 		<% end %>	

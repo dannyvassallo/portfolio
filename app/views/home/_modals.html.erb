@@ -1,19 +1,28 @@
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+<% @posts.each do |post| %>
+  <div id=<%= "post-modal-#{post.id}" %> class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><%= post.title %></h4>
+        </div>
+        <div class="modal-body">        
+          <% if post.image? %>
+            <%= image_tag( post.image.url, :class => "img-responsive" )  %>
+          <% end %>
+          <p><%= post.label %></p>
+          <p><%= post.body %></p>
+           <% if @user && @user.admin? %>
+            <%= link_to "Edit", edit_post_path(post), class: 'btn btn-success' %>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+
     </div>
-
   </div>
-</div>
+<% end %>
