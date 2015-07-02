@@ -1,6 +1,13 @@
+body, html {
+  height: 100%;
+}
 body{
   margin: 0;
 }
+.full-w{
+  width: 100%;
+}
+//  Grid
 #honeycomb-wrap{
 	height: 400px;
 	width: 100%;
@@ -18,4 +25,151 @@ body{
 .mag-glass{
   margin-top: 10px;
   color: white;
+}
+// Header
+#header{
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  h1{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin-top: -10%;
+    text-transform: uppercase;
+  }
+}
+#header_crest, #header_text{
+  opacity: 0.6;
+}
+
+.black-and-white { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+
+// Video
+
+video#bgvid {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url('https://s3-us-west-2.amazonaws.com/dannyvassallo-portfolio/headerBG.jpg') no-repeat;
+background-size: cover;
+}
+
+// Fallback
+
+@media screen and (max-device-width: 800px) {
+  body { background: url('https://s3-us-west-2.amazonaws.com/dannyvassallo-portfolio/headerBG.jpg') #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+// animation
+/* WordFlipper Styles */
+
+/* Flip Animation */
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  20% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  80% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  20% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  80% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
 }
