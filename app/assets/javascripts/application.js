@@ -17,4 +17,5 @@
 //= require jquery.honeycombs
 //= require jquery.scrollTo.min
 //= require home
+//= require bigtext
 //= require_tree .

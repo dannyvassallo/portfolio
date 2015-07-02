@@ -67,3 +67,10 @@ $(function(){
 $(window).on('resize', function(){
     centerCrest();    
 });
+
+// init bigtext
+// $(function() {
+//     $('#header_text').bigtext({
+//         minfontsize: 7
+//     });
+// });
