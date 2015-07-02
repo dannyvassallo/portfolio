@@ -68,6 +68,25 @@ $(window).on('resize', function(){
     centerCrest();    
 });
 
+
+// transparency scroll
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').removeClass("still");
+    }else{
+        $('.navbar').addClass("still");
+    }
+}
+
+$(function(){
+    if($('.navbar').length > 0){
+        $(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+    }
+});
 // init bigtext
 // $(function() {
 //     $('#header_text').bigtext({

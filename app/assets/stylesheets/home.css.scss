@@ -196,3 +196,17 @@ background-size: cover;
     font-size: 14px;
   }
 }
+
+// navbar tweaks
+.navbar {
+  -webkit-transition: all 0.8s ease-out !important;
+  -moz-transition: all 0.8s ease-out !important;
+  -o-transition: all 0.8s ease-out !important;
+  -ms-transition: all 0.8s ease-out !important;
+  transition: all 0.8s ease-out !important;
+}
+
+.navbar.still {
+  background: transparent;
+  border: none;    
+}
