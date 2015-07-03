@@ -12,8 +12,9 @@ body{
 	height: 400px;
 	width: 100%;
 	overflow: hidden;
-  background-image: url(footer_lodyas.png);
-  background-repeat: repeat
+  background-image: url(https://s3-us-west-2.amazonaws.com/dannyvassallo-portfolio/abstract-background.jpg);
+  background-size: cover;
+  background-position: center center;  
 }
 .no-select{
   -moz-user-select: none;
