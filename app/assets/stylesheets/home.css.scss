@@ -1,8 +1,10 @@
 body, html {
   height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 body{
   margin: 0;
+
 }
 .full-w{
   width: 100%;
@@ -210,4 +212,16 @@ background-size: cover;
 .navbar.still {
   background: transparent;
   border: none;    
+}
+
+// Skills
+
+#skills{
+  background-color: white;
+  width: 100%;
+  height: auto;
+  color: #2f4155;
+  h2{
+    font-family: 'Pacifico', cursive;
+  }
 }
