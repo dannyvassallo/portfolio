@@ -102,11 +102,11 @@ $(function(){
     window.addEventListener("scroll", function(){
       if ($window.scrollTop() >= distance && fired === false) {
         // only fires once
-        $('.shell-body .first').css('visibility','visible').typewriter({speed: 50});
-        setTimeout(function(){$('.shell-body .second').css('visibility','visible').typewriter({speed: 50})}, 4000);
-        setTimeout(function(){$('.shell-body .third').css('visibility','visible').typewriter({speed: 50})}, 9500);
-        setTimeout(function(){$('.shell-body .fourth').css('visibility','visible').typewriter({speed: 50})}, 16500);
-        setTimeout(function(){$('.shell-body .fifth').css('visibility','visible').typewriter({speed: 50})}, 21500);
+        $('.shell-body .first').css('visibility','visible').typewriter();
+        setTimeout(function(){$('.shell-body .second').css('visibility','visible').typewriter()}, 3000);
+        setTimeout(function(){$('.shell-body .third').css('visibility','visible').typewriter()}, 6500);
+        setTimeout(function(){$('.shell-body .fourth').css('visibility','visible').typewriter()}, 9250);
+        setTimeout(function(){$('.shell-body .fifth').css('visibility','visible').typewriter()}, 11500);
         fired = true;
       }
     }, true)
