@@ -227,6 +227,9 @@ background-size: cover;
 }
 
 // about
+#about{
+  background-color: #fff;
+}
 
 .shell-wrap {
   margin: 100px auto 0 auto;
@@ -243,7 +246,7 @@ background-size: cover;
   padding: 5px 0;
   margin: 0;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
-  font-size: 0.85em;
+  font-size: 18px;
   border: 1px solid #CCCCCC;
   border-bottom: none;
  
@@ -272,6 +275,7 @@ background-size: cover;
   color: #45D40C;
   font: 0.8em 'Andale Mono', Consolas, 'Courier New';
   line-height: 1.6em;
+  min-height: 400px;
  
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -286,11 +290,31 @@ background-size: cover;
   position: absolute;
   left: 0;
   top: 0;
+  font-size: 18px;  
 }
  
 .shell-body p {
   word-wrap: break-word;
   position: relative;
   padding: 0 0 0 15px;
-  visibility: hidden;  
+  visibility: hidden;
+  font-size: 18px;  
+}
+
+.osx-btns{
+  float: left;
+  position: absolute;
+  margin-left: 10px;
+  .x-out{
+    color: #FD4E4E;
+    cursor: pointer;
+  }
+  .minim{
+    color: #F3BB55;
+    cursor: pointer;
+  }
+  .zoombtn{
+    color: #96D16F;
+    cursor: pointer;
+  }
 }

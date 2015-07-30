@@ -95,12 +95,22 @@ $(function(){
 // });
 
 // type-writer
-
-
 $(function(){
-    setTimeout(function(){$('.shell-body .first').css('visibility','visible').typewriter({speed: 100})}, 2500);
-    setTimeout(function(){$('.shell-body .second').css('visibility','visible').typewriter({speed: 100})}, 7500);
-    setTimeout(function(){$('.shell-body .third').css('visibility','visible').typewriter({speed: 100})}, 15000);
-    setTimeout(function(){$('.shell-body .fourth').css('visibility','visible').typewriter({speed: 100})}, 21000);
-    setTimeout(function(){$('.shell-body .fifth').css('visibility','visible').typewriter({speed: 100})}, 26000);
+    var distance = $('#about').offset().top,
+    $window = $(window);
+    var fired = false;
+    window.addEventListener("scroll", function(){
+      if ($window.scrollTop() >= distance && fired === false) {
+        // only fires once
+        $('.shell-body .first').css('visibility','visible').typewriter({speed: 50});
+        setTimeout(function(){$('.shell-body .second').css('visibility','visible').typewriter({speed: 50})}, 4000);
+        setTimeout(function(){$('.shell-body .third').css('visibility','visible').typewriter({speed: 50})}, 9500);
+        setTimeout(function(){$('.shell-body .fourth').css('visibility','visible').typewriter({speed: 50})}, 16500);
+        setTimeout(function(){$('.shell-body .fifth').css('visibility','visible').typewriter({speed: 50})}, 21500);
+        fired = true;
+      }
+    }, true)
+    $('.x-out').on('click', function(){
+        $('.shell-wrap').fadeOut();
+    });
 });
