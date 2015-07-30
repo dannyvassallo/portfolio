@@ -93,3 +93,14 @@ $(function(){
 //         minfontsize: 7
 //     });
 // });
+
+// type-writer
+
+
+$(function(){
+    setTimeout(function(){$('.shell-body .first').css('visibility','visible').typewriter({speed: 100})}, 2500);
+    setTimeout(function(){$('.shell-body .second').css('visibility','visible').typewriter({speed: 100})}, 7500);
+    setTimeout(function(){$('.shell-body .third').css('visibility','visible').typewriter({speed: 100})}, 15000);
+    setTimeout(function(){$('.shell-body .fourth').css('visibility','visible').typewriter({speed: 100})}, 21000);
+    setTimeout(function(){$('.shell-body .fifth').css('visibility','visible').typewriter({speed: 100})}, 26000);
+});

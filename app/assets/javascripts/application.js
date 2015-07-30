@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require jquery.honeycombs
 //= require jquery.scrollTo.min
-//= require home
+//= require jquery.typewriter.min
 //= require bigtext
+//= require home
 //= require_tree .
