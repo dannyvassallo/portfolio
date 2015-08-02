@@ -11,7 +11,7 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.2'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -24,6 +24,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'font-awesome-rails'
+gem 'underscore-rails'
 
 
 group :doc do

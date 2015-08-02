@@ -114,3 +114,12 @@ $(function(){
         $('.shell-wrap').fadeOut();
     });
 });
+
+
+$(function(){
+    Github.userActivity({
+        username: "dannyvassallo",
+        selector: ".git-embed",
+        limit: 20
+      });
+});
