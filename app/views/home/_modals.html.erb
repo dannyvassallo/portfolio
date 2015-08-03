@@ -9,11 +9,18 @@
           <h4 class="modal-title"><%= post.title %></h4>
         </div>
         <div class="modal-body">        
-          <% if post.image? %>
-            <%= image_tag( post.image.url, :class => "img-responsive" )  %>
-          <% end %>
-          <p><%= post.label %></p>
-          <p><%= post.body %></p>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <% if post.image? %>            
+                  <%= image_tag( post.image.url, :class => "full-w" )  %>
+                <% end %>
+              </div>
+              <div class="col-lg-6">
+                <p><%= post.body %></p>
+              </div>
+            </div>
+          </div>                    
            <% if @user && @user.admin? %>
             <%= link_to "Edit", edit_post_path(post), class: 'btn btn-success' %>
           <% end %>
