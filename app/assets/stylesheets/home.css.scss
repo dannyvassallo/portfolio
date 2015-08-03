@@ -221,8 +221,25 @@ background-size: cover;
   width: 100%;
   height: auto;
   color: #2f4155;
+  margin-top: 40px;
   h1,h2,h3{
     font-family: 'Pacifico', cursive;
+  }
+  h2{
+    margin: 40px auto 40px auto;
+  }  
+  .skill{
+    img{
+      max-width: 140px;
+    }
+    h3{      
+      font-size: large;
+    }
+    p{      
+      text-align: left;
+      font-size: 12px;
+      min-height: 70px;
+    }
   }
 }
 
