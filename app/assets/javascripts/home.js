@@ -159,3 +159,4 @@ $(function(){
 $(window).resize(function(){
     resizeSpot();
 });
+
