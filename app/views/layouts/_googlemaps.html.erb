@@ -100,7 +100,7 @@
             .click(function(){
                var that=$(this);
                if(!that.data('win')){
-                that.data('win',new google.maps.InfoWindow({content:'this is the center'}));
+                that.data('win',new google.maps.InfoWindow({content:'made with <3 in New Jersey'}));
                 that.data('win').bindTo('position',map,'center');
                }
                that.data('win').open(map);
