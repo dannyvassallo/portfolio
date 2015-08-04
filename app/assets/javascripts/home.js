@@ -75,12 +75,17 @@ function checkScroll(){
 
     if($(window).scrollTop() > startY){
         $('.navbar').removeClass("still");
+        $('.navbar-default .navbar-nav > li > a').css('color','#2f4155');
+        $('.navbar-default .navbar-toggle .icon-bar').css('background-color','#2f4155');
     }else{
         $('.navbar').addClass("still");
+        $('.navbar-default .navbar-nav > li > a').css('color','#fff');
+        $('.navbar-default .navbar-toggle .icon-bar').css('background-color','#fff');
     }
 }
 
 $(function(){
+    checkScroll();
     if($('.navbar').length > 0){
         $(window).on("scroll load resize", function(){
             checkScroll();
