@@ -146,3 +146,16 @@ jQuery(document).ready(function($) {
         }, 500);        
     });
 });
+
+function resizeSpot(){
+    var videoH = $('.video').height();
+    $('.spotify').css('height',videoH);
+}
+
+$(function(){
+    resizeSpot();
+});
+
+$(window).resize(function(){
+    resizeSpot();
+});
