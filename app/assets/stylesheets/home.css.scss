@@ -390,3 +390,11 @@ body,html,#map_canvas{height:100%;margin:0;}
   width: 100%;
   background-color: white;
 }
+
+// alert
+.alert{
+  margin-top: 80px !important;
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+}

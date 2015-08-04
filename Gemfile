@@ -25,7 +25,8 @@ gem 'mini_magick'
 gem 'fog'
 gem 'font-awesome-rails'
 gem 'underscore-rails'
-
+gem 'mail_form'
+gem 'simple_form'
 
 group :doc do
   gem 'sdoc', require: false
