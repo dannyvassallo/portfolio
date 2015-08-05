@@ -258,6 +258,9 @@ background-size: cover;
 // about
 #about{
   background-color: #fff;
+  .mobile-text{
+    visibility: visible;
+  }
 }
 
 .shell-wrap {
