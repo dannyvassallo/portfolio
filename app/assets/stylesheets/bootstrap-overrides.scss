@@ -1,0 +1,67 @@
+$navbar-height:                    80px;
+// $navbar-margin-bottom:             $line-height-computed !default;
+// $navbar-border-radius:             $border-radius-base !default;
+// $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+// $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+$navbar-collapse-max-height:       340px;
+
+// $navbar-default-color:             #ccc; 
+$navbar-default-bg:                #fff;
+$navbar-default-border:            0;
+.navbar-brand{
+  border-radius: 50%;
+  background-color: #2f4155 !important;
+  width: 60px !important;
+  text-align: center !important;
+  height: 60px !important;
+  margin-top: 10px !important;
+  margin-left: 5px !important;
+  img{    
+    margin-top: -18px !important;
+    margin-left: -5px !important;
+  }
+}
+// // Navbar links
+$navbar-default-link-color:                #fff;
+// $navbar-default-link-hover-color:          #333 !default;
+// $navbar-default-link-hover-bg:             transparent !default;
+// $navbar-default-link-active-color:         #555 !default;
+// $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+// $navbar-default-link-disabled-color:       #ccc !default;
+// $navbar-default-link-disabled-bg:          transparent !default;
+
+// // Navbar brand label
+// $navbar-default-brand-color:               $navbar-default-link-color !default;
+// $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+// $navbar-default-brand-hover-bg:            transparent !default;
+
+// // Navbar toggle
+$navbar-default-toggle-hover-bg:           transparent;
+// $navbar-default-toggle-icon-bar-bg:        #888;
+$navbar-default-toggle-border-color:       transparent;
+
+
+// //=== Inverted navbar
+// // Reset inverted navbar basics
+// $navbar-inverse-color:                      lighten($gray-light, 15%) !default;
+// $navbar-inverse-bg:                         #222 !default;
+// $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+
+// // Inverted navbar links
+// $navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
+// $navbar-inverse-link-hover-color:           #fff !default;
+// $navbar-inverse-link-hover-bg:              transparent !default;
+// $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
+// $navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
+// $navbar-inverse-link-disabled-color:        #444 !default;
+// $navbar-inverse-link-disabled-bg:           transparent !default;
+
+// // Inverted navbar brand label
+// $navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
+// $navbar-inverse-brand-hover-color:          #fff !default;
+// $navbar-inverse-brand-hover-bg:             transparent !default;
+
+// // Inverted navbar toggle
+// $navbar-inverse-toggle-hover-bg:            #333 !default;
+// $navbar-inverse-toggle-icon-bar-bg:         #fff !default;
+// $navbar-inverse-toggle-border-color:        #333 !default;

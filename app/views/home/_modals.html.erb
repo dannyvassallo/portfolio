@@ -1,0 +1,70 @@
+<% @posts.each do |post| %>
+  <div id=<%= "post-modal-#{post.id}" %> class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><%= post.title %></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">        
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class='imac-wrapper'>
+                <div class='imac'>
+                  <div class='imac__screen'>
+                    <div class='camera'></div>
+                    <div class='shine'></div>
+                    <div class='display'>
+                      <% if post.image? %>            
+                        <%= image_tag( post.image.url, :class => "full-w" )  %>
+                      <% end %>
+                    </div>
+                    <div class='logo'>
+                      <div class='top'>
+                        <span></span>
+                      </div>
+                      <div class='butt'>
+                        <span></span>
+                      </div>
+                      <div class='bite'></div>
+                    </div>
+                  </div>
+                  <div class='imac__stand'>
+                    <div class='top'></div>
+                    <div class='bottom'></div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-6">
+                <p><%= post.body %></p>
+              </div>
+            </div>
+          </div>                    
+           <% if @user && @user.admin? %>
+            <%= link_to "Edit", edit_post_path(post), class: 'btn btn-success' %>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<% end %>

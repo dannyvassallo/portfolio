@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require bootstrap-sprockets
 //= require turbolinks
+//= require jquery.honeycombs
+//= require jquery.scrollTo.min
+//= require jquery.typewriter.min
+//= require bigtext
+//= require github
+//= require home
+//= require underscore
 //= require_tree .

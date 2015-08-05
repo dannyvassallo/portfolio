@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default navbar-fixed-top still">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
+      <a class="navbar-brand scrollto" href="#" data-attr-scroll="header">
+        <img alt="Brand" src="https://s3-us-west-2.amazonaws.com/dannyvassallo-portfolio/crest.png" width="40px;">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="scrollto" data-attr-scroll="about">About</a></li>
+        <li><a href="#" class="scrollto" data-attr-scroll="skills">Skills</a></li>
+        <li><a href="#" class="scrollto" data-attr-scroll="portfolio">Portfolio</a></li>
+        <li><a href="#" class="scrollto" data-attr-scroll="music">Music</a></li>
+        <li><a href="#" class="scrollto" data-attr-scroll="contact">Contact</a></li>
+        <% if current_user %>
+          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign In", new_user_session_path, {:class => 'hider sign-in'} %></li>
+        <% end %>        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+

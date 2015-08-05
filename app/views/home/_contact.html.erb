@@ -1,0 +1,25 @@
+<section id="contact">
+    <div id="map_canvas"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 contact-form">
+                <div align="center">
+                  <h3>Send me a message</h3>
+
+                  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+                    <%= f.input :name, :required => true, :label => false, :placeholder => 'Your Name' %>
+                    <%= f.input :email, :required => true, :label => false, :placeholder => 'Your@Email.Address' %>
+                    <%= f.input :message, :as => :text, :required => true, :label => false, :placeholder => 'Type your message here' %>
+                    <div class= "hidden">
+                      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                    </div>
+                    <div>
+                      </br>
+                      <%= f.button :submit, 'Submit', :class=> "btn btn-primary full-w" %>
+                    </div>
+                  <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
