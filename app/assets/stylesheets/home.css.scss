@@ -85,6 +85,15 @@ background-size: cover;
   #bgvid { display: none; }
 }
 
+@media (max-width: 800px){
+  #header{
+    background-image: url('https://s3-us-west-2.amazonaws.com/dannyvassallo-portfolio/headerBG.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+
 // animation
 /* WordFlipper Styles */
 
@@ -240,7 +249,7 @@ background-size: cover;
   h2{
     margin: 40px auto 40px auto;
   }  
-  .skill{
+  .skill{    
     img{
       max-width: 140px;
     }
