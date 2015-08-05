@@ -17,7 +17,12 @@
         <li><a href="#" class="scrollto" data-attr-scroll="skills">Skills</a></li>
         <li><a href="#" class="scrollto" data-attr-scroll="portfolio">Portfolio</a></li>
         <li><a href="#" class="scrollto" data-attr-scroll="music">Music</a></li>
-        <li><a href="#" class="scrollto" data-attr-scroll="contact">Contact</a></li>        
+        <li><a href="#" class="scrollto" data-attr-scroll="contact">Contact</a></li>
+        <% if current_user %>
+          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign In", new_user_session_path %></li>
+        <% end %>        
       </ul>
     </div>
   </div>

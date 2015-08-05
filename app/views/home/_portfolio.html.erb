@@ -10,5 +10,8 @@
         <% end %>
       <% end %> 
     </div>
+    <% if policy(Post.new).create? %>
+      <%= link_to "New Post", new_post_path, class: 'btn btn-success new-post' %>
+    <% end %>
   </div>
 </section>
