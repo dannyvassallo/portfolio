@@ -11,10 +11,33 @@
         <div class="modal-body">        
           <div class="container">
             <div class="row">
-              <div class="col-lg-6">
-                <% if post.image? %>            
-                  <%= image_tag( post.image.url, :class => "full-w" )  %>
-                <% end %>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class='imac-wrapper'>
+                <div class='imac'>
+                  <div class='imac__screen'>
+                    <div class='camera'></div>
+                    <div class='shine'></div>
+                    <div class='display'>
+                      <% if post.image? %>            
+                        <%= image_tag( post.image.url, :class => "full-w" )  %>
+                      <% end %>
+                    </div>
+                    <div class='logo'>
+                      <div class='top'>
+                        <span></span>
+                      </div>
+                      <div class='butt'>
+                        <span></span>
+                      </div>
+                      <div class='bite'></div>
+                    </div>
+                  </div>
+                  <div class='imac__stand'>
+                    <div class='top'></div>
+                    <div class='bottom'></div>
+                  </div>
+                </div>
+              </div>
               </div>
               <div class="col-lg-6">
                 <p><%= post.body %></p>
