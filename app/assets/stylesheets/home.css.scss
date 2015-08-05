@@ -450,3 +450,19 @@ body,html,#map_canvas{height:100%;margin:0;}
   width: 100% !important;
   z-index: 99999 !important;
 }
+
+// footer
+
+#footer{
+  background-color: #2f4155;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  p{
+    word-wrap: break-word;
+  }
+}
