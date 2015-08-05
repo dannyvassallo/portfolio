@@ -160,3 +160,15 @@ $(window).resize(function(){
     resizeSpot();
 });
 
+var clickcounter = 0;
+// link hider
+$(function(){
+    $('.navbar-brand').click(function(){
+        if (clickcounter < 7){
+            clickcounter++;
+            console.log(clickcounter);
+        } else {
+            $('.sign-in').removeClass('hider');
+        }
+    });
+});
