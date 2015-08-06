@@ -29,7 +29,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :square do
-    process resize_and_crop: 640
+    process :resize_to_fit => [320, nil]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
@@ -53,18 +53,4 @@ class ImageUploader < CarrierWave::Uploader::Base
       end    
     end
 
-    # Resize and crop square from Center
-    def resize_and_crop(size)  
-      manipulate! do |image|                 
-        if image[:width] < image[:height]
-          remove = ((image[:height] - image[:width])/2).round 
-          image.shave("0x#{remove}") 
-        elsif image[:width] > image[:height] 
-          remove = ((image[:width] - image[:height])/2).round
-          image.shave("#{remove}x0")
-        end
-        image.resize("#{size}x#{size}")
-        image
-      end
-    end
 end
